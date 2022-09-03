@@ -768,9 +768,10 @@ img {
 }
 
 .portfolio__img{
-    width: 265px;
+    /* width: 265px; */
     border-radius: .5rem;
     justify-self: center;
+    /* height: 123px; */
 }
 
 .portfolio__title{
@@ -816,13 +817,9 @@ img {
     right: -.5rem;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: -2.5rem;
-}
 
-.swiper-pagination-bullet-active{
-    background-color: var(--first-color);
-}
+
+
 
 .swiper-button-next,
 .swiper-button-prev,
@@ -1002,6 +999,7 @@ img {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
     margin-top: var(--mb-3);
+    text-align: center;
 }
 
 .footer__title,
