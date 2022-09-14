@@ -80,6 +80,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+  --inputtext-color: hsl(var(--hue-color), 8%, 75%);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -909,6 +910,7 @@ img {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+  color: var(--inputtext-color);
 }
 
 .contact__label {
