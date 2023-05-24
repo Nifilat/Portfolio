@@ -19,7 +19,7 @@
       -> Copy the color mode (HSL)
   */
 
-  --hue: 207;
+  --hue: 202;
   --first-color: hsl(var(--hue), 100%, 70%);
   --first-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
@@ -234,6 +234,22 @@ svg {
 }
 
 /* Add blur to header */
+.blur-header {
+  background-color: transparent;
+}
+
+.blur-header::after {
+  content: "";
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(0, 0%, 10%, 0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px); /* For safari */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /* Active link */
 
@@ -300,7 +316,7 @@ svg {
 }
 
 .home__blob {
-  width: 220px;
+  width: 250px;
   fill: var(--first-color);
   filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, 0.2));
 }
@@ -321,7 +337,29 @@ svg {
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+  row-gap: 2.5rem;
+}
 
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: 2rem;
+}
+
+.about__image {
+  justify-self: center;
+}
+
+.about__blob {
+  width: 250px;
+}
+
+.about__blob path {
+  stroke: var(--first-color);
+}
 /*=============== SKILLS ===============*/
 
 /*=============== SERVICES ===============*/
