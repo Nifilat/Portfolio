@@ -753,6 +753,10 @@ svg {
   .services__card {
     padding-block: 1.5rem;
   }
+
+  .qualification__data {
+    gap: 0.5rem;
+  }
 }
 
 /* For medium devices */
@@ -764,6 +768,12 @@ svg {
   .projects__container,
   .contact__container {
     grid-template-columns: 360px;
+    justify-content: center;
+  }
+
+  .qualification__sections {
+    display: grid;
+    grid-template-columns: 0.6fr;
     justify-content: center;
   }
 }
@@ -798,6 +808,16 @@ svg {
 
   .about__data {
     order: 1;
+  }
+
+  .qualification__tabs {
+    justify-content: center;
+  }
+  .qualification__button {
+    margin: 0 var(--mb-1);
+  }
+  .qualification__sections {
+    grid-template-columns: 0.5fr;
   }
 
   .services__container,
